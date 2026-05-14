@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N72 Investments | Abu Dhabi Investment Firm</title>
+    <meta name="description"
+        content="N72 Investments is a privately held investment firm based in Abu Dhabi, United Arab Emirates, focused on principal investments, strategic transactions, and long-term capital allocation." />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        n72: {
+                            dark: '#061016',
+                            navy: '#0b1720',
+                            card: '#101f2a',
+                            gold: '#c8a96a',
+                            softGold: 'rgba(200,169,106,0.14)',
+                            muted: '#aeb8bd'
+                        }
+                    },
+                    boxShadow: {
+                        glow: '0 30px 90px rgba(200,169,106,0.16)',
+                        luxury: '0 32px 90px rgba(0,0,0,0.38)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background:
+                radial-gradient(circle at 18% 8%, rgba(200, 169, 106, 0.16), transparent 32%),
+                radial-gradient(circle at 80% 18%, rgba(70, 119, 139, 0.18), transparent 34%),
+                linear-gradient(135deg, #061016 0%, #0a141b 48%, #05090d 100%);
+        }
+
+        .grid-overlay {
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+            background-size: 72px 72px;
+            mask-image: linear-gradient(to bottom, black, transparent 75%);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.055);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(18px);
+        }
+
+        .image-mask {
+            mask-image: linear-gradient(to bottom, black 64%, transparent 100%);
+        }
+
+        .image-card img {
+            transition: transform 700ms ease;
+        }
+
+        .image-card:hover img {
+            transform: scale(1.06);
+        }
+    </style>
+</head>
+
+<body class="font-sans text-white antialiased">
+    <div class="fixed inset-0 grid-overlay pointer-events-none"></div>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#061016]/75 backdrop-blur-xl">
+        <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
+            <a href="#top" class="flex items-center gap-3" aria-label="N72 Investments home">
+                <span
+                    class="grid h-11 w-11 place-items-center rounded-full border border-n72-gold/50 bg-n72-softGold text-sm font-extrabold text-n72-gold">N72</span>
+                <span class="text-sm font-bold uppercase tracking-[0.22em] text-white sm:text-base">N72
+                    Investments</span>
+            </a>
+
+            <nav class="hidden items-center gap-8 text-sm text-n72-muted md:flex" aria-label="Main navigation">
+                <a href="#firm" class="transition hover:text-white">Firm</a>
+                <a href="#focus" class="transition hover:text-white">Focus</a>
+                <a href="#mandate" class="transition hover:text-white">Mandate</a>
+                <a href="#contact"
+                    class="rounded-full border border-n72-gold/40 bg-n72-softGold px-5 py-2.5 font-semibold text-n72-gold transition hover:border-n72-gold/70">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top" class="relative overflow-hidden">
+        <!-- Hero -->
+        <section class="relative min-h-screen pt-32 pb-20 sm:pt-40 lg:flex lg:items-center">
+            <div class="absolute inset-x-0 top-0 -z-10 h-[760px] opacity-35">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1800&q=85"
+                    alt="Abu Dhabi skyline and modern business district"
+                    class="h-full w-full object-cover image-mask" />
+            </div>
+            <div class="absolute inset-0 -z-10 bg-gradient-to-r from-[#061016] via-[#061016]/85 to-[#061016]/35"></div>
+
+            <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-[1.08fr_0.92fr]">
+                <div>
+                    <div
+                        class="mb-7 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-n72-gold">
+                        <span class="h-2 w-2 rounded-full bg-n72-gold shadow-[0_0_20px_rgba(200,169,106,0.9)]"></span>
+                        Abu Dhabi · United Arab Emirates
+                    </div>
+
+                    <h1
+                        class="max-w-5xl font-display text-5xl font-bold leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-8xl">
+                        Private capital with strategic discretion.
+                    </h1>
+
+                    <p class="mt-8 max-w-2xl text-base leading-8 text-n72-muted sm:text-lg">
+                        N72 Investments is a privately held investment firm focused on principal investments,
+                        strategic transactions, and long-term capital allocation across public and private markets.
+                    </p>
+
+                    <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+                        <a href="#focus"
+                            class="inline-flex min-h-14 items-center justify-center rounded-full bg-n72-gold px-7 font-bold text-[#071016] shadow-glow transition hover:-translate-y-0.5 hover:shadow-luxury">
+                            Explore Focus Areas
+                        </a>
+                        <a href="#contact"
+                            class="inline-flex min-h-14 items-center justify-center rounded-full border border-white/15 bg-white/[0.04] px-7 font-bold text-white transition hover:border-n72-gold/50 hover:text-n72-gold">
+                            Engage With N72
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="glass overflow-hidden rounded-[2rem] shadow-luxury">
+                        <div class="relative h-[520px]">
+                            <img src="https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&fit=crop&w=1200&q=85"
+                                alt="Luxury Abu Dhabi architecture" class="h-full w-full object-cover opacity-80" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-[#061016] via-[#061016]/40 to-transparent">
+                            </div>
+                            <div
+                                class="absolute left-6 right-6 top-6 flex justify-between text-xs font-semibold uppercase tracking-[0.18em] text-white/70">
+                                <span>Privately Held</span>
+                                <span>Long-Term Capital</span>
+                            </div>
+                            <div
+                                class="absolute inset-x-0 top-1/2 -translate-y-1/2 text-center font-display text-[9rem] font-bold tracking-[-0.12em] text-n72-gold/20 sm:text-[12rem]">
+                                N72
+                            </div>
+                            <div
+                                class="absolute bottom-6 left-6 right-6 rounded-3xl border border-white/10 bg-[#061016]/75 p-6 backdrop-blur-xl">
+                                <h3 class="text-lg font-bold text-n72-gold">Selective by design</h3>
+                                <p class="mt-3 text-sm leading-7 text-n72-muted">
+                                    The firm pursues opportunities where discretion, structure, and strategic alignment
+                                    are essential to transaction execution and long-term value creation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Firm -->
+        <section id="firm" class="py-24 sm:py-32">
+            <div class="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.72fr_1.28fr]">
+                <div>
+                    <p class="text-xs font-bold uppercase tracking-[0.25em] text-n72-gold">The Firm</p>
+                </div>
+                <div>
+                    <h2 class="font-display text-4xl font-bold leading-tight tracking-tight text-white sm:text-6xl">
+                        Focused on complex investment opportunities.
+                    </h2>
+                    <p class="mt-7 max-w-3xl text-base leading-8 text-n72-muted sm:text-lg">
+                        Based in Abu Dhabi, N72 Investments maintains a flexible and selective mandate across
+                        public and private markets. The firm participates in transactions where capital,
+                        structure, timing, and alignment with counterparties are central to the investment case.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Feature -->
+        <section class="py-8 sm:py-12">
+            <div class="mx-auto max-w-7xl px-5 sm:px-8">
+                <div class="grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
+                    <div
+                        class="relative min-h-[420px] overflow-hidden rounded-[2rem] border border-white/10 shadow-luxury">
+                        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=85"
+                            alt="Executive investment meeting" class="absolute inset-0 h-full w-full object-cover" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-[#061016]/95 via-[#061016]/45 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 max-w-xl p-7 sm:p-10">
+                            <p class="text-xs font-bold uppercase tracking-[0.25em] text-n72-gold">Strategic Engagement
+                            </p>
+                            <h3 class="mt-4 font-display text-3xl font-bold leading-tight text-white sm:text-5xl">
+                                Built for discretion, structure, and alignment.
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="grid gap-5">
+                        <div class="glass rounded-[2rem] p-8">
+                            <p class="text-sm uppercase tracking-[0.22em] text-n72-gold">Mandate</p>
+                            <p class="mt-5 text-3xl font-bold leading-tight text-white">Flexible public and private
+                                market participation.</p>
+                        </div>
+                        <div class="relative min-h-[220px] overflow-hidden rounded-[2rem] border border-white/10">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85"
+                                alt="Modern financial district building"
+                                class="absolute inset-0 h-full w-full object-cover opacity-85" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#061016]/90 to-transparent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Investment Gallery -->
+        <section class="py-20 sm:py-28">
+            <div class="mx-auto max-w-7xl px-5 sm:px-8">
+                <div class="mb-12 max-w-3xl">
+                    <p class="text-xs font-bold uppercase tracking-[0.25em] text-n72-gold">Investment Perspective</p>
+                    <h2
+                        class="mt-5 font-display text-4xl font-bold leading-tight tracking-tight text-white sm:text-6xl">
+                        A disciplined view across capital, industry, and markets.
+                    </h2>
+                    <p class="mt-6 text-base leading-8 text-n72-muted sm:text-lg">
+                        N72 combines long-term capital thinking with strategic execution across sectors where timing,
+                        structure, and trusted counterparties shape outcomes.
+                    </p>
+                </div>
+
+                <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+                    <div
+                        class="image-card group relative min-h-[360px] overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] shadow-luxury lg:col-span-2">
+                        <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=1300&q=85"
+                            alt="Investment team reviewing strategic market data"
+                            class="absolute inset-0 h-full w-full object-cover opacity-80" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#061016] via-[#061016]/45 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-7 sm:p-9">
+                            <span
+                                class="rounded-full border border-n72-gold/30 bg-n72-softGold px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-n72-gold">Capital
+                                Allocation</span>
+                            <h3
+                                class="mt-5 max-w-lg font-display text-3xl font-bold leading-tight text-white sm:text-4xl">
+                                Long-term decisions supported by disciplined analysis.</h3>
+                        </div>
+                    </div>
+
+                    <div
+                        class="image-card relative min-h-[360px] overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] shadow-luxury">
+                        <img src="https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?auto=format&fit=crop&w=900&q=85"
+                            alt="Energy and industrial infrastructure"
+                            class="absolute inset-0 h-full w-full object-cover opacity-80" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#061016] via-[#061016]/35 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-7">
+                            <p class="text-xs font-bold uppercase tracking-[0.2em] text-n72-gold">Energy</p>
+                            <h3 class="mt-3 text-2xl font-bold leading-tight text-white">Industrial scale opportunities.
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div
+                        class="image-card relative min-h-[360px] overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] shadow-luxury">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=85"
+                            alt="Public market trading screens and financial charts"
+                            class="absolute inset-0 h-full w-full object-cover opacity-80" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#061016] via-[#061016]/35 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-7">
+                            <p class="text-xs font-bold uppercase tracking-[0.2em] text-n72-gold">Markets</p>
+                            <h3 class="mt-3 text-2xl font-bold leading-tight text-white">Public-market special
+                                situations.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Focus -->
+        <section id="focus" class="py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-5 sm:px-8">
+                <div class="grid gap-12 lg:grid-cols-[0.72fr_1.28fr]">
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-[0.25em] text-n72-gold">Focus Areas</p>
+                    </div>
+                    <div>
+                        <h2 class="font-display text-4xl font-bold leading-tight tracking-tight text-white sm:text-6xl">
+                            Capital allocation across strategic sectors.
+                        </h2>
+                        <p class="mt-7 max-w-3xl text-base leading-8 text-n72-muted sm:text-lg">
+                            N72 participates across multiple sectors and market environments, with particular
+                            attention to opportunities requiring discretion, long-term perspective, and structured
+                            execution.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    <article
+                        class="group rounded-[1.7rem] border border-white/10 bg-white/[0.045] p-7 transition hover:-translate-y-1 hover:border-n72-gold/40 hover:bg-white/[0.07]">
+                        <span
+                            class="grid h-11 w-11 place-items-center rounded-full border border-n72-gold/30 bg-n72-softGold text-sm font-extrabold text-n72-gold">01</span>
+                        <h3 class="mt-7 text-xl font-bold text-white">Principal Investments</h3>
+                        <p class="mt-4 text-sm leading-7 text-n72-muted">Direct investment activity using the firm’s own
+                            capital with a long-term and selective approach.</p>
+                    </article>
+
+                    <article
+                        class="group rounded-[1.7rem] border border-white/10 bg-white/[0.045] p-7 transition hover:-translate-y-1 hover:border-n72-gold/40 hover:bg-white/[0.07]">
+                        <span
+                            class="grid h-11 w-11 place-items-center rounded-full border border-n72-gold/30 bg-n72-softGold text-sm font-extrabold text-n72-gold">02</span>
+                        <h3 class="mt-7 text-xl font-bold text-white">Strategic & Special Situations</h3>
+                        <p class="mt-4 text-sm leading-7 text-n72-muted">Complex opportunities involving strategic
+                            alignment, special situations, restructuring, or non-traditional transaction paths.</p>
+                    </article>
+
+                    <article
+                        class="group rounded-[1.7rem] border border-white/10 bg-white/[0.045] p-7 transition hover:-translate-y-1 hover:border-n72-gold/40 hover:bg-white/[0.07]">
+                        <span
+                            class="grid h-11 w-11 place-items-center rounded-full border border-n72-gold/30 bg-n72-softGold text-sm font-extrabold text-n72-gold">03</span>
+                        <h3 class="mt-7 text-xl font-bold text-white">Public & Private Markets</h3>
+                        <p class="mt-4 text-sm leading-7 text-n72-muted">Flexible participation across listed
+                            securities, private companies, and market-driven investment opportunities.</p>
+                    </article>
+
+                    <article
+                        class="group rounded-[1.7rem] border border-white/10 bg-white/[0.045] p-7 transition hover:-translate-y-1 hover:border-n72-gold/40 hover:bg-white/[0.07]">
+                        <span
+                            class="grid h-11 w-11 place-items-center rounded-full border border-n72-gold/30 bg-n72-softGold text-sm font-extrabold text-n72-gold">04</span>
+                        <h3 class="mt-7 text-xl font-bold text-white">Energy & Industrial Opportunities</h3>
+                        <p class="mt-4 text-sm leading-7 text-n72-muted">Sector exposure across energy, industrial
+                            transactions, and strategically relevant operating opportunities.</p>
+                    </article>
+
+                    <article
+                        class="group rounded-[1.7rem] border border-white/10 bg-white/[0.045] p-7 transition hover:-translate-y-1 hover:border-n72-gold/40 hover:bg-white/[0.07]">
+                        <span
+                            class="grid h-11 w-11 place-items-center rounded-full border border-n72-gold/30 bg-n72-softGold text-sm font-extrabold text-n72-gold">05</span>
+                        <h3 class="mt-7 text-xl font-bold text-white">Structured Transactions</h3>
+                        <p class="mt-4 text-sm leading-7 text-n72-muted">Investment structures designed around
+                            counterparties, transaction complexity, asset quality, and execution requirements.</p>
+                    </article>
+
+                    <article
+                        class="group rounded-[1.7rem] border border-white/10 bg-white/[0.045] p-7 transition hover:-translate-y-1 hover:border-n72-gold/40 hover:bg-white/[0.07]">
+                        <span
+                            class="grid h-11 w-11 place-items-center rounded-full border border-n72-gold/30 bg-n72-softGold text-sm font-extrabold text-n72-gold">06</span>
+                        <h3 class="mt-7 text-xl font-bold text-white">Long-Term Capital Allocation</h3>
+                        <p class="mt-4 text-sm leading-7 text-n72-muted">A patient investment perspective focused on
+                            durable value, disciplined selection, and strategic positioning.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sector Image Strip -->
+        <section class="py-10 sm:py-16">
+            <div class="mx-auto max-w-7xl px-5 sm:px-8">
+                <div class="grid gap-5 md:grid-cols-3">
+                    <div
+                        class="image-card relative min-h-[280px] overflow-hidden rounded-[2rem] border border-white/10">
+                        <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1000&q=85"
+                            alt="Modern architectural structure representing strategic assets"
+                            class="absolute inset-0 h-full w-full object-cover opacity-80" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#061016]/95 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-7">
+                            <p class="text-xs font-bold uppercase tracking-[0.2em] text-n72-gold">Strategic Assets</p>
+                            <h3 class="mt-3 text-2xl font-bold text-white">Selective positioning</h3>
+                        </div>
+                    </div>
+
+                    <div
+                        class="image-card relative min-h-[280px] overflow-hidden rounded-[2rem] border border-white/10">
+                        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85"
+                            alt="Premium corporate office interior"
+                            class="absolute inset-0 h-full w-full object-cover opacity-80" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#061016]/95 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-7">
+                            <p class="text-xs font-bold uppercase tracking-[0.2em] text-n72-gold">Partnerships</p>
+                            <h3 class="mt-3 text-2xl font-bold text-white">Trusted engagement</h3>
+                        </div>
+                    </div>
+
+                    <div
+                        class="image-card relative min-h-[280px] overflow-hidden rounded-[2rem] border border-white/10">
+                        <img src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?auto=format&fit=crop&w=1000&q=85"
+                            alt="Financial documents and investment planning"
+                            class="absolute inset-0 h-full w-full object-cover opacity-80" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#061016]/95 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-7">
+                            <p class="text-xs font-bold uppercase tracking-[0.2em] text-n72-gold">Transactions</p>
+                            <h3 class="mt-3 text-2xl font-bold text-white">Structured execution</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mandate -->
+        <section id="mandate" class="border-y border-white/10 bg-white/[0.025] py-24 sm:py-32">
+            <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-2">
+                <div>
+                    <p class="text-xs font-bold uppercase tracking-[0.25em] text-n72-gold">Mandate</p>
+                    <h2
+                        class="mt-5 font-display text-4xl font-bold leading-tight tracking-tight text-white sm:text-6xl">
+                        Flexible, selective, and aligned.
+                    </h2>
+                    <p class="mt-7 max-w-2xl text-base leading-8 text-n72-muted sm:text-lg">
+                        N72 operates with a long-term perspective and engages on a highly selective basis with
+                        counterparties, operating partners, and management teams. The firm evaluates opportunities
+                        where strategic context and disciplined execution can shape outcomes.
+                    </p>
+                </div>
+
+                <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-[#061016]/50 shadow-luxury">
+                    <div class="relative h-56 border-b border-white/10">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=85"
+                            alt="Private investment discussion"
+                            class="absolute inset-0 h-full w-full object-cover opacity-75" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#061016] via-[#061016]/45 to-transparent">
+                        </div>
+                        <div class="absolute bottom-5 left-6 right-6">
+                            <p class="text-xs font-bold uppercase tracking-[0.2em] text-n72-gold">Operating Discipline
+                            </p>
+                            <h3 class="mt-2 text-2xl font-bold text-white">Engagement only where alignment is clear.
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="divide-y divide-white/10 p-7">
+                        <div class="flex items-center justify-between gap-5 py-5">
+                            <span class="text-lg font-semibold text-white">Discretion-led engagement</span>
+                            <small class="text-xs font-bold tracking-[0.2em] text-n72-gold">01</small>
+                        </div>
+                        <div class="flex items-center justify-between gap-5 py-5">
+                            <span class="text-lg font-semibold text-white">Strategic transaction alignment</span>
+                            <small class="text-xs font-bold tracking-[0.2em] text-n72-gold">02</small>
+                        </div>
+                        <div class="flex items-center justify-between gap-5 py-5">
+                            <span class="text-lg font-semibold text-white">Flexible public and private mandate</span>
+                            <small class="text-xs font-bold tracking-[0.2em] text-n72-gold">03</small>
+                        </div>
+                        <div class="flex items-center justify-between gap-5 py-5">
+                            <span class="text-lg font-semibold text-white">Long-term capital perspective</span>
+                            <small class="text-xs font-bold tracking-[0.2em] text-n72-gold">04</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statement -->
+        <section class="py-24 text-center sm:py-32">
+            <div class="mx-auto max-w-6xl px-5 sm:px-8">
+                <blockquote
+                    class="font-display text-4xl font-bold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
+                    Pursuing opportunities where structure, discretion, and strategic alignment matter.
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="pb-20 sm:pb-28">
+            <div class="mx-auto max-w-7xl px-5 sm:px-8">
+                <div
+                    class="relative overflow-hidden rounded-[2rem] border border-n72-gold/30 bg-white/[0.045] p-7 shadow-luxury sm:p-12">
+                    <div class="absolute inset-0 -z-10">
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1600&q=85"
+                            alt="Private boardroom and corporate office"
+                            class="h-full w-full object-cover opacity-20" />
+                        <div class="absolute inset-0 bg-gradient-to-r from-[#061016] via-[#061016]/90 to-[#061016]/70">
+                        </div>
+                    </div>
+
+                    <div class="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+                        <div>
+                            <p class="text-xs font-bold uppercase tracking-[0.25em] text-n72-gold">Contact</p>
+                            <h2
+                                class="mt-5 font-display text-4xl font-bold leading-tight tracking-tight text-white sm:text-6xl">
+                                Engagements are considered selectively.
+                            </h2>
+                            <p class="mt-6 max-w-2xl text-base leading-8 text-n72-muted sm:text-lg">
+                                N72 Investments engages with counterparties, operating partners, and management teams
+                                on a selective basis. For confidential introductions or transaction-related inquiries,
+                                please contact the firm directly.
+                            </p>
+                        </div>
+
+                        <div
+                            class="rounded-3xl border border-white/10 bg-[#061016]/70 p-7 backdrop-blur-xl lg:text-right">
+                            <strong class="block text-xl text-white">N72 Investments</strong>
+                            <span class="mt-3 block text-n72-muted">Abu Dhabi, United Arab Emirates</span>
+                            <span class="mt-2 block text-n72-muted">Email: info@n72investments.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-white/10 py-8 text-sm text-n72-muted">
+        <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 px-5 sm:px-8 md:flex-row md:items-center">
+            <span>© <span id="year"></span> N72 Investments. All rights reserved.</span>
+            <span>Privately Held Investment Firm · Abu Dhabi</span>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
